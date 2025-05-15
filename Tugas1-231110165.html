@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Ferli</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff69b4, #fff);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #ff1493;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header a, nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .profile-img {
+            width: 150px;
+            border-radius: 50%;
+            border: 5px solid #ff1493;
+            padding: 5px;
+        }
+
+        .btn {
+            background-color: #ff1493;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            border: none;
+        }
+
+        .btn:hover {
+            background-color: #ff007f;
+        }
+
+        section {
+            padding: 50px;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .skill-box {
+            width: 30%;
+            background: #ffb6c1;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        footer {
+            background: #ff1493;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 24px;
+        }
+
+        @media (max-width: 640px) {
+            .skills {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .skill-box {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header> 
+        <a href="#" style="font-size: 24px; font-weight: bold; margin-right: 20px;">Portofolio Ferli</a>
+
+    </header>
+        <img src="ferli.jpg.jpeg" alt="Foto Profil Ferli" class="profile-img">
+        <h1>Ferli Nur H.</h1>
+        <p>Front-end Developer</p>
+        <a href="#contact" class="btn">Hubungi Saya</a>
+    </section>
+        <h2>Tentang Saya</h2>
+        <p>Hai teman-teman, kenalin aku Ferli Nur H. Aku dari prodi informatika semester 4, Di jurusan ini, saya mempelajari
+            berbagai hal mulai dari algoritma dan struktur data, pemrograman, pengembangan web, basis data, hingga
+            kalkulus. Minat saya terhadap coding sudah dimulai sejak SMK, karena saya mengambil jurusan Rekayasa
+            Perangkat Lunak (RPL). Itulah mengapa saya memilih untuk melanjutkan studi di bidang ini. Namun, jujur saja,
+            saya paling menikmati coding saat semuanya berjalan lancar tanpa error. Hehe 🙏</p>
+   
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>Java Script</li>
+                <li>CSS</li>
+                
+            </ul>
+    </section>
+
+        <h3>Project</h3>
+    <ul>
+        <li>protofolio diri sendiri</li>
+        <img src="protofolio.jpg.png" width="360" height="202" alt="protofolio image">
+        <li>website perpustakaan</li>
+        <img src="perpustakaan.jpg.png" width="360" height="202" alt="perpustakaan image">
+        <li>kalkulator online</li>
+        <img src="kalkulator.jpg.png" width="360" height="202" alt="kalkulator image">
+        
+    </ul>
+    </section>
+
+        <h2>Hubungi Saya</h2>
+        <form>
+            <input type="text" placeholder="Nama" required><br><br>
+            <input type="email" placeholder="Email" required><br><br>
+            <textarea placeholder="Pesan" required></textarea><br><br>
+            <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Ferli - Portofolio</p>
+        <p>Email: 231110165@student.mercubuana-yogya.ac.id</p>
+        <p>Temukan saya di media sosial:</p>
+        <div class="social-icons">
+            <a href="https://api.whatsapp.com/send?phone=6283106416173" target="_blank"><i
+                    class="fab fa-whatsapp"></i></a>
+            <a href="https://instagram.com/_fferrliii" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector("form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            alert("Pesan Berhasil Dikirim!");
+        });
+    </script>
+</body>
+
+</html>

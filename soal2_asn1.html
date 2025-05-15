@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jadwal Pendadaran Mahasiswa</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: #fff;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: auto;
+      }
+
+      h2 {
+        margin-top: 20px;
+        font-size: 24px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid #ccc;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      .edit {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        margin-right: 5px;
+        cursor: pointer;
+      }
+
+      .delete {
+        background-color: #e74c3c;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+      }
+
+      .edit:hover {
+        background-color: #2980b9;
+      }
+
+      .delete:hover {
+        background-color: #c0392b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>Nama Mahasiswa : Ferli Nur H.</p>
+      <p>NIM Mahasiswa : 231110165</p>
+
+      <h2>Tabel Jadwal Pendadaran Mahasiswa</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nama</th>
+            <th>NIM</th>
+            <th>Jurusan</th>
+            <th>Waktu</th>
+            <th>Dosen Penguji</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ferli Nur H.</td>
+            <td>231110165</td>
+            <td>Informatika</td>
+            <td>24 April 2025, Pukul 15:00</td>
+            <td>Bapak Muttaqin</td>
+            <td>
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Bayu Prasetyo</td>
+            <td>23111234</td>
+            <td>Informatika</td>
+            <td>24 April 2025, Pukul 12:00</td>
+            <td>Bapak Jati</td>
+            <td>
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Feri Hariyanto</td>
+            <td>231110678</td>
+            <td>Informatika</td>
+            <td>24 April 2025, Pukul 19:00</td>
+            <td>Bapak Sidiq</td>
+            <td>
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
